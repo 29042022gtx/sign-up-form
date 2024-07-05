@@ -66,3 +66,85 @@ aside .creator {
   color: white;
 }
 
+main {
+  flex: 2;
+}
+
+main .discription {
+  padding: 16px;
+  font-weight: bold;
+}
+
+main form {
+  padding: 16px 16px 24px;
+  background-color: white;
+  box-shadow: 0 4px 4px var(--smoke);
+}
+
+main form > div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 48px;
+}
+
+main form .action {
+  width: 100%;
+  font-weight: bold;
+}
+
+main form label {
+  display: block;
+  margin: 2em 0 0;
+  font-size: .6em;
+  font-weight: bold;
+  color: var(--dark);
+}
+
+main form input {
+  display: block;
+  padding: 4px;
+  border: 1px solid var(--smoke);
+  border-radius: 4px;
+  /* font-size: 80%; */
+}
+
+main form input:focus {
+  outline: none;
+  border-color: var(--blue);
+  box-shadow: .2em .2em .2em var(--smoke);
+}
+
+main form input:invalid {
+  border-color: red;
+}
+
+main form input + div {
+  position: relative;
+}
+
+main form input:invalid + div::before {
+  content: '* Password do not match';
+  position: absolute;
+  margin: .5em 0;
+  color: red;
+  opacity: 1;
+}
+
+main button {
+  display: block;
+  margin: 16px 32px;
+  padding: 8px 32px;
+  font-weight: bold;
+  color: white;
+  background-color: var(--olive);
+  border: none;
+  border-radius: 4px;
+}
+
+main .had-account {
+  margin: 16px 32px;
+}
+
+main .had-account a {
+  color: var(--olive);
+}
