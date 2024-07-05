@@ -5,3 +5,64 @@
   font-style: normal;
 }
 
+:root {
+  --light: #F9FAFB;
+  --smoke: #E5E7EB;
+  --dark: #555;
+  --blue: blue;
+  --olive: #596D48;
+
+}
+
+html {
+  font-family: sans-serif;
+}
+
+a {
+  color: inherit;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  background-color: var(--light);
+}
+
+aside {
+  flex: 1;
+  max-width: 350px;
+  height: 100%;
+  height: 95vh;
+  position: relative;
+  background-image: url(./images/halie-west-25xggax4bSA-unsplash.jpg);
+  background-size: cover;
+  overflow: hidden;
+}
+
+aside .logo {
+  width: 100%;
+  position: absolute;
+  top: 20%;
+  font-family: Norse, fantasy;
+  font-size: 4em;
+  text-align: center;
+  color: white;
+  background-color: #0008;
+}
+
+aside .logo * {
+  vertical-align: middle;
+}
+
+aside .logo img {
+  height: 1.5em;
+}
+
+aside .creator {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  color: white;
+}
+
